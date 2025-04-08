@@ -18,19 +18,19 @@ export const ContactUs = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 px-4 py-8">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-sky-100 via-teal-100 to-green-100 px-4 py-12">
       <form
         ref={refForm}
         onSubmit={handleSubmit}
-        className="w-full max-w-lg bg-white rounded-2xl shadow-lg p-8 space-y-6 border border-purple-200"
+        className="w-full max-w-xl bg-white rounded-3xl shadow-2xl p-10 space-y-6 border border-sky-200"
       >
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-purple-700">Contáctanos</h2>
-          <p className="text-gray-600 text-sm">Estamos felices de saber de ti</p>
+          <h2 className="text-4xl font-extrabold text-sky-800 mb-1">¡Hablemos!</h2>
+          <p className="text-gray-500 text-sm">Déjanos tu mensaje, te responderemos pronto</p>
         </div>
 
         <fieldset className="flex flex-col">
-          <label htmlFor="Username" className="text-sm font-semibold text-purple-600 mb-1">
+          <label htmlFor="Username" className="text-sm font-medium text-sky-700 mb-1">
             Nombre completo
           </label>
           <input
@@ -38,12 +38,12 @@ export const ContactUs = () => {
             type="text"
             placeholder="Ej: Karina Tabares"
             required
-            className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all duration-200"
+            className="px-4 py-3 rounded-lg border border-gray-200 bg-sky-50 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:bg-white transition-all duration-200"
           />
         </fieldset>
 
         <fieldset className="flex flex-col">
-          <label htmlFor="email" className="text-sm font-semibold text-purple-600 mb-1">
+          <label htmlFor="email" className="text-sm font-medium text-sky-700 mb-1">
             Correo electrónico
           </label>
           <input
@@ -52,29 +52,29 @@ export const ContactUs = () => {
             name="email"
             id="email"
             required
-            className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-400 transition-all duration-200"
+            className="px-4 py-3 rounded-lg border border-gray-200 bg-sky-50 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:bg-white transition-all duration-200"
           />
         </fieldset>
 
         <fieldset className="flex flex-col">
-          <label htmlFor="message" className="text-sm font-semibold text-purple-600 mb-1">
+          <label htmlFor="message" className="text-sm font-medium text-sky-700 mb-1">
             Mensaje
           </label>
           <textarea
             maxLength="500"
-            placeholder="Escribe tu mensaje..."
+            placeholder="Escribe tu mensaje aquí..."
             name="message"
             id="message"
             rows="5"
-            className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-200 resize-none"
+            className="px-4 py-3 rounded-lg border border-gray-200 bg-sky-50 focus:outline-none focus:ring-2 focus:ring-green-400 focus:bg-white transition-all duration-200 resize-none"
           ></textarea>
         </fieldset>
 
         <button
           type="submit"
-          className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-2 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
+          className="w-full bg-gradient-to-r from-teal-500 to-green-500 hover:from-teal-600 hover:to-green-600 text-white font-bold py-3 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg uppercase tracking-wide"
         >
-          Enviar mensaje
+          Enviar
         </button>
       </form>
     </div>
